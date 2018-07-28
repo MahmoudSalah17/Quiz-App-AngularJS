@@ -2,11 +2,11 @@
 
 In this project we are going to build a quiz site using angularjs to test your gaming knowledge.
 
-## Dependencies:
+### Dependencies:
 1. Angularjs 1.6.9
 2. Angular route 1.6.9
 
-## This repo contains:
+### This repo contains:
 **1.app.js:**
 contains our app configurations and controllers.
 
@@ -20,9 +20,9 @@ contains templates for our app directories.
 contains all images for our app.
 
 
-Note: The quiz contains 3 questions, but questions can be added dynamically to the QuizListController by adding a new question object.
+**Note:** The quiz contains 3 questions, but questions can be added dynamically to the QuizListController by adding a new question object.
 
-## Quiz Solution:
+### Quiz Solution:
 1-PlayStation 2.
 2-Uncharted and Crash Bandicoot.
 3-Shigeru Miyamoto
