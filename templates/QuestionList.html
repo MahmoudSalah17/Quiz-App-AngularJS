@@ -1,0 +1,21 @@
+<div>
+	<h1>Questions</h1>
+	<hr/>
+	<div ng-repeat="question in questions">
+		<img src="{{question.imgUrl}}" style="width: 300px;height: 300px">			
+        <div class="row">
+                <br/><span>Q{{$index+1}}. {{question.questiontxt}}</span>
+        </div>
+        <div ng-repeat="answer in question.Answer">
+                <input type="{{question.inputType}}" name="question{{$parent.$index}}" 
+                value="{{answer.answertxt}}{{$parent.$index}}" 
+                ng-model="answer.isChecked"
+                ng-change="addAnswer(question.inputType, answer.answertxt, $parent.$index, answer.isChecked)"
+                ng-value="{{answer.answertxt}}"/>{{answer.answertxt}}
+        </div>
+        <hr/>
+	</div>
+
+
+	<button ng-click="calculateScore()">Submit</button>
+</div>
